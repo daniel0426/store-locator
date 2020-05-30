@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  height: 100vh;
+}
+
+.title {
+  font-family: "Shrikhand", cursive;
+  font-weight: bold;
+  position: absolute;
+  left: 40px;
+  top: 50px;
+  opacity: 0.85;
+  font-size: 50px;
+  z-index: 10;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: lightcoral;
+  font-weight: 900;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.search-container {
+  width: 340px;
+  height: 60px;
+  background-color: #454e53;
+  position: absolute;
+  z-index: 30;
+  top: 230px;
+  left: 30px;
+  border-radius: 30px;
+  opacity: 0.85;
+}
+
+.search {
+  height: 100%;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+}
+.search input {
+  font-size: 20px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: white;
+
+  padding: 0px 20px;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.search i {
+  color: white;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.stores-list-container {
+  width: 300px;
+  bottom: 30px;
+  background-color: lightgray;
+  position: absolute;
+  top: 320px;
+  z-index: 30;
+  border-radius: 30px;
+  left: 30px;
+  opacity: 0.7;
+  padding: 20px;
+}
+.store-info-container {
+  flex-grow: 1;
+}
+
+.store-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid darkgray;
+  padding: 8px;
+  border-radius: 10px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.store-container:hover {
+  background-color: lightgreen;
+  border-bottom: 1px solid darkgreen;
+  transform: scale(1.07);
+}
+.stores-list {
+  margin-bottom: 10px;
+  padding: 10px;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.stores-list .store-address {
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+}
+.stores-list .store-address span {
+  display: block;
+}
+
+.stores-list .store-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: darkblue;
+  font-size: 13px;
+  color: white;
+}
+.stores-list .store-phone {
+  font-size: 15px;
+  margin-top: 8px;
+  margin-bottom: 7px;
+  opacity: 0.7;
+}
+.marker {
+  width: 100%;
+  height: 100%;
+
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.marker .name {
+  font-size: 16px;
+  font-weight: 900;
+}
+.marker .closetime {
+  margin: 5px 0px;
+  opacity: 0.8;
+}
+
+.marker .address {
+  font-size: 14px;
+  color: darkblue;
+  margin-bottom: 3px;
+}
+.marker .phone {
+  font-size: 14px;
+  color: darkblue;
+}
+.marker i {
+  margin-right: 10px;
+  color: blue;
+  font-size: 16px;
+}
